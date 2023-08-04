@@ -2,7 +2,7 @@
 
 # 1-Dê um git no modulo principal: 
 
-$ git clone https://github.com/CaledoniaTech/SIRI_SGR_AMB_DESENV/tree/producao_lts sgr
+$ git clone https://github.com/CaledoniaTech/SIRI_SGR_AMB_DESENV sgr
 
 
 # 2-Clone os submodulos da aplicacao 
@@ -21,7 +21,7 @@ $ code .
 
 # 3.1- Copie o arquivo .env para pasta ./backend 
    $ cuidado o arquivo é secreto pois possui a senha de acesso ao banco de dados
-   
+
 # 3.2- Restaure o backup do banco de dados para o servidor siri_postgres
   
 # 3.3- Abra um terminal e execute o backend
