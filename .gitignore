@@ -1,0 +1,8 @@
+app/
+backend/
+frontend/
+dbpostgres/
+node_modules
+.env
+__pycache__
+dbpostgres

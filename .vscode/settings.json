@@ -1,0 +1,9 @@
+{
+  "kanban.saveFiles.pathPreferences": [
+    
+    ".vscode/kanban.json",
+    "kanban.json"
+  ],
+  "python.autoComplete.extraPaths": [],
+  "python.analysis.extraPaths": []
+}

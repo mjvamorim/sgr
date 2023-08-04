@@ -1,0 +1,47 @@
+version: '3.8'
+services:
+  #Python Frask Service
+  backend:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: siri_python
+    restart: unless-stopped
+    tty: true
+    environment:
+      SERVICE_NAME: python_siri
+      SERVICE_TAGS: dev
+    working_dir: /home/siri/sgr
+    volumes:
+      - ../:/home/siri/sgr
+    depends_on:
+      - postgres
+    networks:
+      - siri-net
+      
+  #Postgres
+  postgres:
+    image: postgres:15.1-alpine
+    restart: always
+    container_name: siri_postgres
+    environment:
+      - POSTGRES_USER=postgres 
+      - POSTGRES_PASSWORD=postgres 
+    volumes:
+      - ../dbpostgres:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - siri-net
+
+#Docker Networks
+networks:
+  siri-net:
+    driver: bridge
+
+#Volumes
+volumes:
+  dbmysql:
+    driver: local
+  dbpg:
+    driver: local
