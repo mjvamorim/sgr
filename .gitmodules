@@ -1,0 +1,9 @@
+[submodule "app"]
+	path = app
+	url = https://github.com/CaledoniaTech/App_Siri.git
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/CaledoniaTech/SGR_Siri_Front
+[submodule "backend"]
+	path = backend
+	url = https://github.com/CaledoniaTech/SGR_Siri_Backend
