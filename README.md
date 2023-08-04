@@ -5,9 +5,16 @@ git  submodule add  --force https://github.com/CaledoniaTech/SGR_Siri_Backend ba
 
 
 # Execução
-Fazer o restore do banco de dados
-Rodar o backend : cd backend && flask run
-Rodar o frontend : cd frontend && yarn start
+Abrir um terminal
+   $ cd backend
+   $ criar o arquivo .env na pasta backend
+   $ flask run
+  
+Abrir outro terminal
+   $ cd frontend
+   $ yarn
+   $ yarn start
+
 
 # Tarefas
 - Documentação da Base Postgres
