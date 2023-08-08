@@ -25,12 +25,23 @@ services:
     restart: always
     container_name: siri_postgres
     environment:
-      - POSTGRES_USER=postgres 
-      - POSTGRES_PASSWORD=postgres 
+      - POSTGRES_USER=siri 
+      - POSTGRES_PASSWORD=siri 
+      - POSTGRES_DB=siri
     volumes:
-      - ../dbpostgres:/var/lib/postgresql/data
+      - ../dbpg:/var/lib/postgresql/data
     ports:
       - 5432:5432
+    networks:
+      - siri-net
+
+  pgadmin4:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: siri@siri.com
+      PGADMIN_DEFAULT_PASSWORD: siri
+    ports:
+      - '9000:80'
     networks:
       - siri-net
 
@@ -41,7 +52,5 @@ networks:
 
 #Volumes
 volumes:
-  dbmysql:
-    driver: local
   dbpg:
     driver: local

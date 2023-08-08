@@ -2,6 +2,7 @@ app/
 backend/
 frontend/
 dbpostgres/
+dbpg/
 node_modules
 .env
 __pycache__

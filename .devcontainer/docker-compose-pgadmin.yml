@@ -1,8 +1,8 @@
   pgadmin4:
     image: dpage/pgadmin4
     environment:
-      PGADMIN_DEFAULT_EMAIL: postgres@postgres.com
-      PGADMIN_DEFAULT_PASSWORD: postgres
+      PGADMIN_DEFAULT_EMAIL: siri@siri.com
+      PGADMIN_DEFAULT_PASSWORD: siri
     ports:
       - '9000:80'
     networks:
