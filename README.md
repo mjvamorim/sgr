@@ -2,7 +2,7 @@
 
 # 1-Dê um git no modulo principal: 
 
-$ git clone --recursive https://github.com/CaledoniaTech/SIRI_SGR_AMB_DESENV sgr
+$ git clone --recursive "*** Este Repositorio via https ***" sgr
 
 
 # 2-Entre na pasta e abra o vscode
